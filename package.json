@@ -1,0 +1,22 @@
+{
+  "name": "locst",
+  "version": "1.0.0",
+  "description": "Package for easy localStorage management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onur-celik/locst-npm-package.git"
+  },
+  "keywords": [
+    "localStorage"
+  ],
+  "author": "Mustafa Onur Çelik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onur-celik/locst-npm-package/issues"
+  },
+  "homepage": "https://github.com/onur-celik/locst-npm-package#readme"
+}
