@@ -1,6 +1,6 @@
 {
   "name": "locst",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Package for easy localStorage management",
   "main": "index.js",
   "scripts": {

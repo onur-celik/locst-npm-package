@@ -24,7 +24,7 @@ const locst = {
             const currentData = JSON.parse(localStorage.getItem(key));
             localStorage.setItem(
                 key,
-                JSON.stringify({ ...currentData, newData })
+                JSON.stringify({ ...currentData, ...newData })
             );
         } catch (err) {
             throw err;
