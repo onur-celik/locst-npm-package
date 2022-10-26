@@ -3,7 +3,7 @@ const locst = {
     checkIfLocalStorageAvailable() {
         return typeof localStorage === "object" ? true : false;
     },
-    addItem(key, data) {
+    add(key, data) {
         try {
             localStorage.setItem(key, JSON.stringify(data));
         } catch (err) {
@@ -11,7 +11,14 @@ const locst = {
         }
         return true;
     },
-    removeItem(key) {
+    get(key) {
+        try {
+            return JSON.parse(localStorage.getItem(key));
+        } catch (err) {
+            throw err;
+        }
+    },
+    remove(key) {
         try {
             localStorage.removeItem(key);
         } catch (err) {
@@ -19,7 +26,7 @@ const locst = {
         }
         return true;
     },
-    updateItem(key, newData) {
+    update(key, newData) {
         try {
             const currentData = JSON.parse(localStorage.getItem(key));
             localStorage.setItem(
